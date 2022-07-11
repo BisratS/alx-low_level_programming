@@ -21,7 +21,7 @@ void puts_half(char *str)
 
 	if (var % 2 == 1)
 		i = var / 2;
-	else 
+	else
 		i= (var - 1) / 2;
 
 	for (i++; i < var; i++)
