@@ -1,5 +1,7 @@
 #include "main.h"
 
+int power(int n, int i);
+
 /**
  * _sqrt_recursion - function that returns the natural square root of a number
  * @n: inpute number
