@@ -21,7 +21,7 @@ int is_palindrome(char *s)
 }
 
 /**
- * strlen - string length
+ * stringlen - string length
  * @s: input string
  * Return: length of string
  *
