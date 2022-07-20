@@ -1,4 +1,8 @@
 #include "main.h"
+#include <string.h>
+
+int stringlen(char *s);
+int comp(char *s, int n1, int n2);
 
 /**
  * is_palindrome - function that returns 1 if a
@@ -13,7 +17,7 @@ int is_palindrome(char *s)
 {
 	if (*s == '\0')
 		return (1);
-	return (comp(s, 0, strlen(s) - 1));
+	return (comp(s, 0, stringlen(s) - 1));
 }
 
 /**
@@ -23,12 +27,12 @@ int is_palindrome(char *s)
  *
  */
 
-int strlen(char *s)
+int stringlen(char *s)
 {
 	if (*s == '\0')
 		return (0);
 	else
-		return (1 + strlen(s + 1));
+		return (1 + stringlen(s + 1));
 }
 
 /**
